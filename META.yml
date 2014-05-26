@@ -1,0 +1,38 @@
+---
+abstract: 'a Dist::Inkt profile for TOBYINK'
+author:
+  - 'Toby Inkster (TOBYINK) <tobyink@cpan.org>'
+build_requires:
+  Test::More: 0.96
+configure_requires:
+  ExtUtils::MakeMaker: 6.17
+dynamic_config: 0
+generated_by: 'Dist::Inkt::Profile::TOBYINK version 0.015, CPAN::Meta::Converter version 2.120921'
+keywords: []
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Dist-Inkt-Profile-TOBYINK
+no_index:
+  directory:
+    - eg
+    - examples
+    - inc
+    - t
+    - xt
+optional_features: {}
+provides:
+  Dist::Inkt::Profile::TOBYINK:
+    file: lib/Dist/Inkt/Profile/TOBYINK.pm
+    version: 0.016
+requires:
+  Dist::Inkt: 0.016
+  Dist::Inkt::DOAP: 0.017
+resources:
+  X_identifier: http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/project
+  bugtracker: http://rt.cpan.org/Dist/Display.html?Queue=Dist-Inkt-Profile-TOBYINK
+  homepage: https://metacpan.org/release/Dist-Inkt-Profile-TOBYINK
+  license: http://dev.perl.org/licenses/
+  repository: git://github.com/tobyink/p5-dist-inkt-profile-tobyink.git
+version: 0.016

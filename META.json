@@ -1,0 +1,68 @@
+{
+   "abstract" : "a Dist::Inkt profile for TOBYINK",
+   "author" : [
+      "Toby Inkster (TOBYINK) <tobyink@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Inkt::Profile::TOBYINK version 0.015, CPAN::Meta::Converter version 2.120921",
+   "keywords" : [],
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Dist-Inkt-Profile-TOBYINK",
+   "no_index" : {
+      "directory" : [
+         "eg",
+         "examples",
+         "inc",
+         "t",
+         "xt"
+      ]
+   },
+   "optional_features" : {},
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.17"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Dist::Inkt" : "0.016",
+            "Dist::Inkt::DOAP" : "0.017"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : "0.96"
+         }
+      }
+   },
+   "provides" : {
+      "Dist::Inkt::Profile::TOBYINK" : {
+         "file" : "lib/Dist/Inkt/Profile/TOBYINK.pm",
+         "version" : "0.016"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "X_identifier" : "http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/project",
+      "bugtracker" : {
+         "web" : "http://rt.cpan.org/Dist/Display.html?Queue=Dist-Inkt-Profile-TOBYINK"
+      },
+      "homepage" : "https://metacpan.org/release/Dist-Inkt-Profile-TOBYINK",
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ],
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/tobyink/p5-dist-inkt-profile-tobyink.git",
+         "web" : "https://github.com/tobyink/p5-dist-inkt-profile-tobyink"
+      }
+   },
+   "version" : "0.016"
+}
