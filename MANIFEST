@@ -10,7 +10,9 @@ META.yml
 Makefile.PL
 README
 SIGNATURE
+TODO
 dist.ini
 doap.ttl
 lib/Dist/Inkt/Profile/TOBYINK.pm
+lib/Dist/Inkt/Role/Test/Whitespace.pm
 t/01basic.t
