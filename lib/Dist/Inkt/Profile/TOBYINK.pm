@@ -1,7 +1,7 @@
 package Dist::Inkt::Profile::TOBYINK;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.018';
+our $VERSION   = '0.019';
 
 use Moose;
 
@@ -28,12 +28,27 @@ with qw(
 	Dist::Inkt::Role::WriteREADME
 	Dist::Inkt::Role::WriteINSTALL
 	Dist::Inkt::Role::SignDistribution
+	Dist::Inkt::Role::Release
 	Dist::Inkt::Role::Test::Whitespace
 	Dist::Inkt::Role::Test::BumpedVersion
 	Dist::Inkt::Role::Test::SaneVersions
 	Dist::Inkt::Role::Test::TestSuite
 	Dist::Inkt::Role::Test::Kwalitee
 );
+
+after Release => sub
+{
+	my $self = shift;
+	
+	require Path::Tiny;
+	my $dest = Path::Tiny::path("~")->child("perl5/published");
+	return $self->log("$dest does not exist; cannot move tarball safely away")
+		unless -d $dest;
+	
+	my $tarball = Path::Tiny::path($_[0] || sprintf('%s.tar.gz', $self->targetdir));
+	$self->log("Moving $tarball to $dest");
+	$tarball->move( $dest->child($tarball->basename) );
+};
 
 1;
 
