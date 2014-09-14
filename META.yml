@@ -7,7 +7,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: '6.17'
 dynamic_config: 0
-generated_by: 'Dist::Inkt::Profile::TOBYINK version 0.019, CPAN::Meta::Converter version 2.140640'
+generated_by: 'Dist::Inkt::Profile::TOBYINK version 0.020, CPAN::Meta::Converter version 2.140640'
 keywords: []
 license: perl
 meta-spec:
@@ -25,10 +25,10 @@ optional_features: {}
 provides:
   Dist::Inkt::Profile::TOBYINK:
     file: lib/Dist/Inkt/Profile/TOBYINK.pm
-    version: '0.019'
+    version: '0.020'
   Dist::Inkt::Role::Test::Whitespace:
     file: lib/Dist/Inkt/Role/Test/Whitespace.pm
-    version: '0.019'
+    version: '0.020'
 requires:
   Dist::Inkt: '0.016'
   Dist::Inkt::DOAP: '0.017'
@@ -37,6 +37,7 @@ requires:
   Dist::Inkt::Role::Test::Kwalitee: '0'
   Dist::Inkt::Role::Test::SaneVersions: '0'
   Dist::Inkt::Role::Test::TestSuite: '0'
+  Test::EOL: '0'
   Test::Tabs: '0'
   perl: '5.010001'
 resources:
@@ -45,4 +46,4 @@ resources:
   homepage: https://metacpan.org/release/Dist-Inkt-Profile-TOBYINK
   license: http://dev.perl.org/licenses/
   repository: git://github.com/tobyink/p5-dist-inkt-profile-tobyink.git
-version: '0.019'
+version: '0.020'

@@ -7,7 +7,7 @@ my $meta = {
   "abstract"       => "a Dist::Inkt profile for TOBYINK",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 0,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.019, CPAN::Meta::Converter version 2.140640",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.020, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -28,14 +28,15 @@ my $meta = {
                             "Dist::Inkt::Role::Test::SaneVersions" => 0,
                             "Dist::Inkt::Role::Test::TestSuite" => 0,
                             "perl" => 5.010001,
+                            "Test::EOL" => 0,
                             "Test::Tabs" => 0,
                           },
                         },
                         test => { requires => { "Test::More" => 0.96 } },
                       },
   "provides"       => {
-                        "Dist::Inkt::Profile::TOBYINK"       => { file => "lib/Dist/Inkt/Profile/TOBYINK.pm", version => 0.019 },
-                        "Dist::Inkt::Role::Test::Whitespace" => { file => "lib/Dist/Inkt/Role/Test/Whitespace.pm", version => 0.019 },
+                        "Dist::Inkt::Profile::TOBYINK"       => { file => "lib/Dist/Inkt/Profile/TOBYINK.pm", version => "0.020" },
+                        "Dist::Inkt::Role::Test::Whitespace" => { file => "lib/Dist/Inkt/Role/Test/Whitespace.pm", version => "0.020" },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -51,7 +52,7 @@ my $meta = {
                                         },
                         x_identifier => "http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/project",
                       },
-  "version"        => 0.019,
+  "version"        => "0.020",
 };
 
 my %dynamic_config;

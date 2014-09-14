@@ -5,7 +5,7 @@ use warnings;
 package Dist::Inkt::Role::Test::Whitespace;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.019';
+our $VERSION   = '0.020';
 
 use Moose::Role;
 use Types::Standard "Bool";
@@ -22,6 +22,12 @@ after BUILD => sub {
 		return if $self->skip_whitespace_test;
 		local $CWD = $self->rootdir;
 		my @dirs = grep -d, qw( lib bin t xt );
+		
+		$self->log("Testing with Test::EOL");
+		die("Bad whitespace")
+			if system("perl -MTest::EOL -E'all_perl_files_ok(qw/ @dirs /)'");
+		
+		$self->log("Testing with Test::Tabs");
 		die("Bad whitespace")
 			if system("perl -MTest::Tabs -E'all_perl_files_ok(qw/ @dirs /)'");
 	});

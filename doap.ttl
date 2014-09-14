@@ -12,7 +12,7 @@
 <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/project>
 	a                    doap:Project;
 	dc:contributor       <http://purl.org/NET/cpan-uri/person/tobyink>;
-	doap-deps:runtime-requirement [ doap-deps:on "perl 5.010001"^^doap-deps:CpanId ], [ doap-deps:on "Dist::Inkt 0.016"^^doap-deps:CpanId ], [
+	doap-deps:runtime-requirement [ doap-deps:on "perl 5.010001"^^doap-deps:CpanId ], [ doap-deps:on "Test::EOL"^^doap-deps:CpanId ], [ doap-deps:on "Dist::Inkt 0.016"^^doap-deps:CpanId ], [
 		doap-deps:on "Dist::Inkt::DOAP 0.017"^^doap-deps:CpanId;
 	], [
 		doap-deps:on "Dist::Inkt::Role::Test::TestSuite"^^doap-deps:CpanId;
@@ -35,7 +35,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "Dist-Inkt-Profile-TOBYINK";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-016>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-017>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-018>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-019>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-016>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-017>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-018>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-019>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-020>;
 	doap:repository      [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-dist-inkt-profile-tobyink>;
@@ -86,12 +86,29 @@
 	doap-changeset:changeset [
 		doap-changeset:item [
 			a doap-changeset:Change;
-			rdfs:label "Include Dist::Inkt::Role::Release.";
+			rdfs:label "use Dist::Inkt::Role::Release";
 		];
 	];
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Dist-Inkt-Profile-TOBYINK-0.019.tar.gz>;
 	doap:revision        "0.019"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-020>
+	a                    doap:Version;
+	dc:identifier        "Dist-Inkt-Profile-TOBYINK-0.020"^^xsd:string;
+	dc:issued            "2014-09-14"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Change;
+			rdfs:label "use Dist::Inkt::Role::Test::Changes";
+		], [
+			a doap-changeset:Change;
+			rdfs:label "use Test::EOL";
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Dist-Inkt-Profile-TOBYINK-0.020.tar.gz>;
+	doap:revision        "0.020"^^xsd:string.
 
 <http://purl.org/NET/cpan-uri/person/tobyink>
 	a                    foaf:Person;
