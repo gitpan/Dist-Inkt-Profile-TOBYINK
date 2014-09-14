@@ -15,7 +15,13 @@
 	doap-deps:runtime-requirement [ doap-deps:on "perl 5.010001"^^doap-deps:CpanId ], [ doap-deps:on "Dist::Inkt 0.016"^^doap-deps:CpanId ], [
 		doap-deps:on "Dist::Inkt::DOAP 0.017"^^doap-deps:CpanId;
 	], [
-		doap-deps:on "Dist::Inkt::Role::Test"^^doap-deps:CpanId;
+		doap-deps:on "Dist::Inkt::Role::Test::TestSuite"^^doap-deps:CpanId;
+	], [
+		doap-deps:on "Dist::Inkt::Role::Test::SaneVersions"^^doap-deps:CpanId;
+	], [
+		doap-deps:on "Dist::Inkt::Role::Test::BumpedVersion"^^doap-deps:CpanId;
+	], [
+		doap-deps:on "Dist::Inkt::Role::Test::Kwalitee"^^doap-deps:CpanId;
 	], [ doap-deps:on "Test::Tabs"^^doap-deps:CpanId ];
 	doap-deps:test-requirement [ doap-deps:on "Test::More 0.96"^^doap-deps:CpanId ];
 	doap:bug-database    <http://rt.cpan.org/Dist/Display.html?Queue=Dist-Inkt-Profile-TOBYINK>;
@@ -27,7 +33,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "Dist-Inkt-Profile-TOBYINK";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-016>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-017>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-016>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-017>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-018>;
 	doap:repository      [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-dist-inkt-profile-tobyink>;
@@ -56,6 +62,20 @@
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Dist-Inkt-Profile-TOBYINK-0.017.tar.gz>;
 	doap:revision        "0.017"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-018>
+	a                    doap:Version;
+	dc:identifier        "Dist-Inkt-Profile-TOBYINK-0.018"^^xsd:string;
+	dc:issued            "2014-09-14"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Change;
+			rdfs:label "Include build-time testing of distribution kwalitee.";
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Dist-Inkt-Profile-TOBYINK-0.018.tar.gz>;
+	doap:revision        "0.018"^^xsd:string.
 
 <http://purl.org/NET/cpan-uri/person/tobyink>
 	a                    foaf:Person;

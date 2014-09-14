@@ -6,6 +6,10 @@ Home page:    <https://metacpan.org/release/Dist-Inkt-Profile-TOBYINK>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Dist-Inkt-Profile-TOBYINK>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+0.018	2014-09-14
+
+ - Include build-time testing of distribution kwalitee.
+
 0.017	2014-09-14
 
  - Start of build-time testing.
