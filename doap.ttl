@@ -35,7 +35,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "Dist-Inkt-Profile-TOBYINK";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-016>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-017>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-018>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-019>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-020>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-016>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-017>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-018>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-019>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-020>, <http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-021>;
 	doap:repository      [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-dist-inkt-profile-tobyink>;
@@ -109,6 +109,20 @@
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Dist-Inkt-Profile-TOBYINK-0.020.tar.gz>;
 	doap:revision        "0.020"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/v_0-021>
+	a                    doap:Version;
+	dc:identifier        "Dist-Inkt-Profile-TOBYINK-0.021"^^xsd:string;
+	dc:issued            "2014-09-14"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Change;
+			rdfs:label "Install distribution before releasing it.";
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Dist-Inkt-Profile-TOBYINK-0.021.tar.gz>;
+	doap:revision        "0.021"^^xsd:string.
 
 <http://purl.org/NET/cpan-uri/person/tobyink>
 	a                    foaf:Person;
