@@ -22,6 +22,7 @@ my $meta = {
                           requires => {
                             "Dist::Inkt" => 0.016,
                             "Dist::Inkt::DOAP" => 0.017,
+                            "Dist::Inkt::Role::Hg" => 0.003,
                             "Dist::Inkt::Role::Release" => 0,
                             "Dist::Inkt::Role::Test::BumpedVersion" => 0,
                             "Dist::Inkt::Role::Test::Kwalitee" => 0,
@@ -35,8 +36,8 @@ my $meta = {
                         test => { requires => { "Test::More" => 0.96 } },
                       },
   "provides"       => {
-                        "Dist::Inkt::Profile::TOBYINK"       => { file => "lib/Dist/Inkt/Profile/TOBYINK.pm", version => 0.021 },
-                        "Dist::Inkt::Role::Test::Whitespace" => { file => "lib/Dist/Inkt/Role/Test/Whitespace.pm", version => 0.021 },
+                        "Dist::Inkt::Profile::TOBYINK"       => { file => "lib/Dist/Inkt/Profile/TOBYINK.pm", version => 0.022 },
+                        "Dist::Inkt::Role::Test::Whitespace" => { file => "lib/Dist/Inkt/Role/Test/Whitespace.pm", version => 0.022 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -52,7 +53,7 @@ my $meta = {
                                         },
                         x_identifier => "http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/project",
                       },
-  "version"        => 0.021,
+  "version"        => 0.022,
 };
 
 my %dynamic_config;
