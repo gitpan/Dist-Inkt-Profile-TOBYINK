@@ -7,7 +7,7 @@ my $meta = {
   "abstract"       => "a Dist::Inkt profile for TOBYINK",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 0,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.021, CPAN::Meta::Converter version 2.140640",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.023, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -20,9 +20,9 @@ my $meta = {
                         configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
                         runtime => {
                           requires => {
-                            "Dist::Inkt" => 0.016,
+                            "Dist::Inkt" => 0.023,
                             "Dist::Inkt::DOAP" => 0.017,
-                            "Dist::Inkt::Role::Hg" => 0.003,
+                            "Dist::Inkt::Role::Hg" => 0.004,
                             "Dist::Inkt::Role::Release" => 0,
                             "Dist::Inkt::Role::Test::BumpedVersion" => 0,
                             "Dist::Inkt::Role::Test::Kwalitee" => 0,
@@ -36,8 +36,8 @@ my $meta = {
                         test => { requires => { "Test::More" => 0.96 } },
                       },
   "provides"       => {
-                        "Dist::Inkt::Profile::TOBYINK"       => { file => "lib/Dist/Inkt/Profile/TOBYINK.pm", version => 0.022 },
-                        "Dist::Inkt::Role::Test::Whitespace" => { file => "lib/Dist/Inkt/Role/Test/Whitespace.pm", version => 0.022 },
+                        "Dist::Inkt::Profile::TOBYINK"       => { file => "lib/Dist/Inkt/Profile/TOBYINK.pm", version => 0.023 },
+                        "Dist::Inkt::Role::Test::Whitespace" => { file => "lib/Dist/Inkt/Role/Test/Whitespace.pm", version => 0.023 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -53,7 +53,7 @@ my $meta = {
                                         },
                         x_identifier => "http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Profile-TOBYINK/project",
                       },
-  "version"        => 0.022,
+  "version"        => 0.023,
 };
 
 my %dynamic_config;
